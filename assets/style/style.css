@@ -61,6 +61,15 @@ header {
         display: block;
     }
 
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
     .menu {
         position: fixed;
         width: 100%;
@@ -99,17 +108,23 @@ section {
 .main {
     width: 100%;
     background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.in-main{
+    margin: 0 100px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 .about {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
-    width: 40%;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
     height: 400px;
 }
 
@@ -124,7 +139,7 @@ section {
 }
 
 .introduction{
-    width: 40%;
+    width: 100%;
     max-width: 580px;
     display: grid;
     grid-gap: 20px;
@@ -144,12 +159,13 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    font-size: 1.2rem;
     
 }
 
 .exp {
     grid-column: 2/3;
-    
+    font-size: 1.2rem;
 }
 
 .contact {
@@ -189,5 +205,59 @@ section {
     font-weight: bold;
 }
 
-/*===============================Experiencias y Habilidades========================*/
+.contact-phone {
+    display: none;
+}
 
+/*============================RESPONSIVE===============================*/
+
+@media screen and (max-width: 760px) {
+    .contact {
+        display: none;
+    }
+
+    .in-main {
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px;
+    }
+
+    .about {
+        height: 200px;
+    }
+
+    .about h1 {
+        font-size: 3.5rem;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .photo {
+        width: 165px;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .contact-phone {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 50px;
+        background-color: #8E7BEF;
+        color: whitesmoke;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 25px;
+    }
+
+    .main {
+        height: 100%;
+    }
+}
+
+
+/*===============================Experiencias y Habilidades========================*/
