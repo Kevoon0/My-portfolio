@@ -447,7 +447,7 @@ section {
 .photoPortfolio {
     display: flex;
     flex-direction: column;
-    color: #8E7BEF;
+    color: #8e7bef;
     align-items: flex-start;
     font-weight: bold;
     gap: 20px;
@@ -484,4 +484,96 @@ section {
 }
 
 /*============================CONTACTO===============================*/
+
+.contacto {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.all-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.main-contacto {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-contact {
+    width: 150px;
+    height: 150px;
+    background-color: #dad7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+}
+
+.icon-contact img {
+    width: 70px;
+    height: 70px;
+}
+
+.bold {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.inf{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    color: #423f40;
+}
+
+/*============================RESPONSIVE===============================*/
+
+@media screen and (max-width: 760px) {
+    .icon-contact {
+        width: 100px;
+        height: 100px;
+        background-color: #dad7eb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+    }
+
+    .main-contacto {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .contact-config{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inf {
+        text-align: center;
+        margin: 0;
+        font-size: 0.5rem;
+    }
+
+    .bold {
+        text-align: center;
+        margin: 0;
+        font-size: 0.5rem;
+    }
+}
+
+/*============================FOOTER===============================*/
 
