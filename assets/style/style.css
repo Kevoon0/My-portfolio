@@ -473,7 +473,7 @@ section {
 
 /*============================RESPONSIVE===============================*/
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .work {
         flex-wrap: wrap;
     }
@@ -539,7 +539,7 @@ section {
 
 /*============================RESPONSIVE===============================*/
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     .icon-contact {
         width: 100px;
         height: 100px;
