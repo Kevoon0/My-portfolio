@@ -364,7 +364,7 @@ section {
 
 /*============================RESPONSIVE===============================*/
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 760px) {
     .exp-section {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(3, auto);
@@ -428,3 +428,60 @@ section {
         width: 50px;
     }
 }
+
+/*============================Portafolio===============================*/
+
+.portafolio {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.portafolio h2 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.photoPortfolio {
+    display: flex;
+    flex-direction: column;
+    color: #8E7BEF;
+    align-items: flex-start;
+    font-weight: bold;
+    gap: 20px;
+}
+
+.photoPortfolio img {
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.work {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main-portafolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+/*============================RESPONSIVE===============================*/
+
+@media screen and (max-width: 760px) {
+    .work {
+        flex-wrap: wrap;
+    }
+
+    .photoPortfolio img {
+        max-width: 260px;
+    }
+}
+
+/*============================CONTACTO===============================*/
+
