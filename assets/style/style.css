@@ -577,3 +577,15 @@ section {
 
 /*============================FOOTER===============================*/
 
+footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+footer div {
+    color: #8E7BEF;
+    margin: 50px 0;
+}
